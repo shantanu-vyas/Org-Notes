@@ -1,4 +1,4 @@
-% Created 2016-10-17 Mon 03:06
+% Created 2016-10-17 Mon 13:13
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -164,16 +164,80 @@
 
 \item $\forall$(x) P(x)
 \label{sec-1-4-1-1-1}%
+\begin{itemize}
 
-\item $\exists$
-\label{sec-1-4-1-1-2}%
+\item Definition: For all x in the universe P(x) is true;
+\label{sec-1-4-1-1-1-1}%
 
-\item $\emptyset$
-\label{sec-1-4-1-1-3}%
+\item Negation
+\label{sec-1-4-1-1-1-2}%
+\begin{itemize}
+
+\item \textlnot{}$\forall$(x) P(x) can also be written as $\exists$\textlnot{} P(x)
+\label{sec-1-4-1-1-1-2-1}%
+
+\item There exists an x such that P(x) is false
+\label{sec-1-4-1-1-1-2-2}%
+\end{itemize} % ends low level
+\end{itemize} % ends low level
+\end{itemize} % ends low level
+
+\item Existential Quantifer
+\label{sec-1-4-1-2}%
+\begin{itemize}
+
+\item $\exists$(x) P(x)
+\label{sec-1-4-1-2-1}%
+\begin{itemize}
+
+\item Definition: For all x in the universe P(x) is true for at least one x;
+\label{sec-1-4-1-2-1-1}%
+
+\item Negation
+\label{sec-1-4-1-2-1-2}%
+\begin{itemize}
+
+\item \textlnot{}$\exists$(x) P(x) can also be written as $\forall$\textlnot{} P(x)
+\label{sec-1-4-1-2-1-2-1}%
+
+\item All x in the universe make P(x) false
+\label{sec-1-4-1-2-1-2-2}%
+\end{itemize} % ends low level
+\end{itemize} % ends low level
 \end{itemize} % ends low level
 \end{itemize} % ends low level
 \subsection{Nested Quantifers}
 \label{sec-1-5}
+\subsubsection{Nested Quantifiers can be used when there are multiple variables such as x and y}
+\label{sec-1-5-1}
+\begin{itemize}
+
+\item $\forall$ (x) $\exists$ (y) (x + y = 0)
+\label{sec-1-5-1-1}%
+\end{itemize} % ends low level
+\subsubsection{Quantification of Two Variables}
+\label{sec-1-5-2}
+
+
+\begin{center}
+\begin{tabular}{lll}
+\hline
+ Statement                       &  When True                       &  When False                        \\
+\hline
+ \forall (x) \forall (y) P(x,y)  &  P(x,y) is true for every pair   &  When there is a x,y               \\
+                                 &                                  &  for which P(x,y) is false         \\
+\hline
+ \forall (x) \exists (y) P(x,y)  &  For every x there is a y        &  When there is an x such           \\
+                                 &  for which P(x,y) is true        &  that P(x,y) is false for every y  \\
+\hline
+ \exists (x) \forall (y) P(x,y)  &  There is an x for which P(x,y)  &  When for every x there is a y     \\
+                                 &  is true for every y             &  for which P(x,y) is false         \\
+\hline
+ \exists (x) \exists (y) P(x,y)  &  There is a pair for x,y         &  P(x,y) is false for               \\
+ \exists (y) \exists (x) P(x,y)  &  for which P(x,y) is true        &  every pair of x and y             \\
+\hline
+\end{tabular}
+\end{center}
 \subsection{Rules of Inference}
 \label{sec-1-6}
 \subsection{Introduction to Proofs}
@@ -197,6 +261,7 @@
 
 
 
-¬
+
+$\emptyset$
 
 \end{document}
