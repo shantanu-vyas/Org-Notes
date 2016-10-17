@@ -1,4 +1,4 @@
-% Created 2016-10-17 Mon 13:13
+% Created 2016-10-17 Mon 13:32
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -240,6 +240,55 @@
 \end{center}
 \subsection{Rules of Inference}
 \label{sec-1-6}
+\subsubsection{Rules of inference are used to show that an argument is valid.}
+\label{sec-1-6-1}
+
+
+\begin{center}
+\begin{tabular}{lll}
+\hline
+ Rule of Inference  &  Tautology                                                       &  Name            \\
+\hline
+ p                  &  (p\wedge (p \rightarrow q)) \rightarrow q                       &  Modus Ponens    \\
+ p \rightarrow q    &                                                                  &                  \\
+ ---------------    &                                                                  &                  \\
+ q                  &                                                                  &                  \\
+\hline
+ \textlnot q        &  (\textlnot q \wedge (p \rightarrow q)) \rightarrow \textlnot p  &  Modus Tollens   \\
+ p \rightarrow q    &                                                                  &                  \\
+ ---------------    &                                                                  &                  \\
+ \textlnot p        &                                                                  &                  \\
+\hline
+ p \rightarrow q    &  ((p \vee q) \wedge \textlnot p) \rightarrow q                   &  Hypothetical    \\
+ q \rightarrow r    &                                                                  &  Syllogism       \\
+ ---------------    &                                                                  &                  \\
+ p  \rightarrow r   &                                                                  &                  \\
+\hline
+ p\vee q            &  p \right arrow (p \vee q)                                       &  Disjunctive     \\
+ \textlnot p        &                                                                  &  Syllogism       \\
+ ---------------    &                                                                  &                  \\
+ q                  &                                                                  &                  \\
+\hline
+ p                  &  p \rightarrow (p\vee q)                                         &  Addition        \\
+ ---------------    &                                                                  &                  \\
+ p\vee q            &                                                                  &                  \\
+\hline
+ p\wedge q          &  (p\wedge q) \rightarrow p                                       &  Simplification  \\
+ ---------------    &                                                                  &                  \\
+ p                  &                                                                  &                  \\
+\hline
+ p                  &  ((p)\wedge(q)) \rightarrow (p \wedge q)                         &  Conjunction     \\
+ q                  &                                                                  &                  \\
+ ---------------    &                                                                  &                  \\
+ p\wedge q          &                                                                  &                  \\
+\hline
+ p\vee q            &  ((p\vee q)\wedge (\textlnot p\vee r))\rightarrow (q\vee r)      &  Conjucntion     \\
+ \textlnot p\vee r  &                                                                  &                  \\
+ ---------------    &                                                                  &                  \\
+ q\vee r            &                                                                  &                  \\
+\hline
+\end{tabular}
+\end{center}
 \subsection{Introduction to Proofs}
 \label{sec-1-7}
 \subsection{Proof methods and Strategy}
