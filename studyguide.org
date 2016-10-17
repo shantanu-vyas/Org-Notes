@@ -4,81 +4,82 @@
 **** Coverse
 ***** q \rightarrow  p
 **** Contrapositive
-***** -q \rightarrow -p
+***** q \rightarrow \textlnot{}p
 **** Inverse
-***** -p \rightarrow -q
+***** \textlnot{}p \rightarrow \textlnot{}q
 ** Applications of Propositional Logic
 *** Examples of turning sentences into propositional Logic.
 ** Propositional Equivalences
 *** Logical Equivalences
-|----------------------+------------------------------+----------------------|
-| p\wedge T            | p                            | Identity Laws        |
-| p\vee F              | p                            |                      |
-|----------------------+------------------------------+----------------------|
-| p\vee T              | T                            | Domination Laws      |
-| p\wedge F            | F                            |                      |
-|----------------------+------------------------------+----------------------|
-| p\vee p              | p                            | Idempotent Laws      |
-| p\wedge p            | p                            |                      |
-|----------------------+------------------------------+----------------------|
-| -(-p)                | p                            | Double Negation Laws |
-|----------------------+------------------------------+----------------------|
-| p\vee q              | q\vee p                      | Commutative Laws     |
-| p\wedge q            | q \wedge p                   |                      |
-|----------------------+------------------------------+----------------------|
-| (p\vee q)\vee r      | p\vee (q\vee r)              | Associative Laws     |
-| (p\wedge q) \wedge r | p \wedge (q \wedge r)        |                      |
-|----------------------+------------------------------+----------------------|
-| p\vee (q\wedge r)    | (p\vee q) \wedge (p\vee r)   | Distributive Laws    |
-| p \wedge (q\vee r)   | (p\wedge q)\vee (p \wedge r) |                      |
-|----------------------+------------------------------+----------------------|
-| -(p\wedge q)         | -p\vee -q                    | De Morgans Laws      |
-| -(p v q)             | -p\wedge -q                  |                      |
-|----------------------+------------------------------+----------------------|
-| p\vee (p\wedge q)    | p                            | Absorption Laws      |
-| p \wedge (p\vee q)   | p                            |                      |
-|----------------------+------------------------------+----------------------|
-| p v -p               | T                            | Negation Laws        |
-| p\wedge -p           | F                            |                      |
-|----------------------+------------------------------+----------------------|
+|---------------------------+------------------------------+----------------------|
+| p\wedge T                 | p                            | Identity Laws        |
+| p\vee F                   | p                            |                      |
+|---------------------------+------------------------------+----------------------|
+| p\vee T                   | T                            | Domination Laws      |
+| p\wedge F                 | F                            |                      |
+|---------------------------+------------------------------+----------------------|
+| p\vee p                   | p                            | Idempotent Laws      |
+| p\wedge p                 | p                            |                      |
+|---------------------------+------------------------------+----------------------|
+| \textlnot{}(\textlnot{}p) | p                            | Double Negation Laws |
+|---------------------------+------------------------------+----------------------|
+| p\vee q                   | q\vee p                      | Commutative Laws     |
+| p\wedge q                 | q \wedge p                   |                      |
+|---------------------------+------------------------------+----------------------|
+| (p\vee q)\vee r           | p\vee (q\vee r)              | Associative Laws     |
+| (p\wedge q) \wedge r      | p \wedge (q \wedge r)        |                      |
+|---------------------------+------------------------------+----------------------|
+| p\vee (q\wedge r)         | (p\vee q) \wedge (p\vee r)   | Distributive Laws    |
+| p \wedge (q\vee r)        | (p\wedge q)\vee (p \wedge r) |                      |
+|---------------------------+------------------------------+----------------------|
+| \textlnot{}(p\wedge q)              | \textlnot{}p\vee \textlnot{}q          | De Morgans Laws      |
+| \textlnot{}(p v q)                  | \textlnot{}p\wedge \textlnot{}q        |                      |
+|---------------------------+------------------------------+----------------------|
+| p\vee (p\wedge q)         | p                            | Absorption Laws      |
+| p \wedge (p\vee q)        | p                            |                      |
+|---------------------------+------------------------------+----------------------|
+| p v \textlnot{}p          | T                            | Negation Laws        |
+| p\wedge \textlnot{}p      | F                            |                      |
+|---------------------------+------------------------------+----------------------|
 
 *** Logical Equivelances Involving Conditional Statements
-|--------------------------------------------+----------------------------|
-| p \rightarrow q                            | -p\vee q                   |
-|--------------------------------------------+----------------------------|
-| p \rightarrow q                            | -q \rightarrow -p          |
-|--------------------------------------------+----------------------------|
-| p\vee q                                    | -p \rightarrow q           |
-|--------------------------------------------+----------------------------|
-| p\wedge  q                                 | -(p \rightarrow -q)        |
-|--------------------------------------------+----------------------------|
-| -(p \rightarrow q)                         | p\wedge q                  |
-|--------------------------------------------+----------------------------|
-| (p \rightarrow q)\wedge (p \rightarrow r)  | p \rightarrow (q \wedge r) |
-|--------------------------------------------+----------------------------|
-| (p \rightarrow r)\wedge (q \rightarrow r)  | (p\vee q) \rightarrow r    |
-|--------------------------------------------+----------------------------|
-| (p \rightarrow q)\vee (p \rightarrow r)    | p \rightarrow (q\vee r)    |
-|--------------------------------------------+----------------------------|
-| (p \rightarrow r)\vee (q \rightarrow r)    | (p\wedge q) \rightarrow r  |
-|--------------------------------------------+----------------------------|
+|-------------------------------------------+-----------------------------|
+| p \rightarrow q                           | \textlnot{}p\vee q          |
+|-------------------------------------------+-----------------------------|
+| p \rightarrow q                           | \textlnot{}q \rightarrow \textlnot{}p |
+|-------------------------------------------+-----------------------------|
+| p\vee q                                   | \textlnot{}p \rightarrow q  |
+|-------------------------------------------+-----------------------------|
+| p\wedge  q                                | \textlnot{}(p \rightarrow \textlnot{}q)         |
+|-------------------------------------------+-----------------------------|
+| \textlnot{}(p \rightarrow q)                        | p\wedge q                   |
+|-------------------------------------------+-----------------------------|
+| (p \rightarrow q)\wedge (p \rightarrow r) | p \rightarrow (q \wedge r)  |
+|-------------------------------------------+-----------------------------|
+| (p \rightarrow r)\wedge (q \rightarrow r) | (p\vee q) \rightarrow r     |
+|-------------------------------------------+-----------------------------|
+| (p \rightarrow q)\vee (p \rightarrow r)   | p \rightarrow (q\vee r)     |
+|-------------------------------------------+-----------------------------|
+| (p \rightarrow r)\vee (q \rightarrow r)   | (p\wedge q) \rightarrow r   |
+|-------------------------------------------+-----------------------------|
 
 *** Logical Equivalences Involving Biconditional Statements
 |------------------------+-------------------------------------------|
 | p \leftrightarrow q    | (p \rightarrow q)\wedge (q \rightarrow p) |
 |------------------------+-------------------------------------------|
-| p \leftrightarrow q    | -p \leftrightarrow -q                     |
+| p \leftrightarrow q    | \textlnot{}p \leftrightarrow \textlnot{}q           |
 |------------------------+-------------------------------------------|
-| p \leftrightarrow q    | (p\wedge q)\vee (-p \wedge -q)            |
+| p \leftrightarrow q    | (p\wedge q)\vee (\textlnot{}p \wedge \textlnot{}q)  |
 |------------------------+-------------------------------------------|
-| -(p \leftrightarrow q) | p \leftrightarrow -q                      |
+| \textlnot{}(p \leftrightarrow q) | p \leftrightarrow \textlnot{}q                      |
 |------------------------+-------------------------------------------|
 
 ** Predicates and Quantifiers
 *** Quantifiers
 **** Universal Quantifer 
-***** ∀(x) DX
-***** \guillemotleft{}
+***** \forall(x) P(x)
+***** \exists
+***** \emptyset
 ** Nested Quantifers
 ** Rules of Inference 
 ** Introduction to Proofs
@@ -92,4 +93,4 @@
 ** Matrices
 
 
-
+¬

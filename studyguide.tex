@@ -1,4 +1,4 @@
-% Created 2016-10-17 Mon 02:52
+% Created 2016-10-17 Mon 03:06
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -52,7 +52,7 @@
 \label{sec-1-1-1-2}%
 \begin{itemize}
 
-\item -q $\rightarrow$ -p
+\item q $\rightarrow$ \textlnot{}p
 \label{sec-1-1-1-2-1}%
 \end{itemize} % ends low level
 
@@ -60,7 +60,7 @@
 \label{sec-1-1-1-3}%
 \begin{itemize}
 
-\item -p $\rightarrow$ -q
+\item \textlnot{}p $\rightarrow$ \textlnot{}q
 \label{sec-1-1-1-3-1}%
 \end{itemize} % ends low level
 \end{itemize} % ends low level
@@ -77,34 +77,34 @@
 \begin{center}
 \begin{tabular}{lll}
 \hline
- p\wedge T             &  p                             &  Identity Laws         \\
- p\vee F               &  p                             &                        \\
+ p\wedge T                  &  p                                &  Identity Laws         \\
+ p\vee F                    &  p                                &                        \\
 \hline
- p\vee T               &  T                             &  Domination Laws       \\
- p\wedge F             &  F                             &                        \\
+ p\vee T                    &  T                                &  Domination Laws       \\
+ p\wedge F                  &  F                                &                        \\
 \hline
- p\vee p               &  p                             &  Idempotent Laws       \\
- p\wedge p             &  p                             &                        \\
+ p\vee p                    &  p                                &  Idempotent Laws       \\
+ p\wedge p                  &  p                                &                        \\
 \hline
- -(-p)                 &  p                             &  Double Negation Laws  \\
+ \textlnot{}(\textlnot{}p)  &  p                                &  Double Negation Laws  \\
 \hline
- p\vee q               &  q\vee p                       &  Commutative Laws      \\
- p\wedge q             &  q \wedge p                    &                        \\
+ p\vee q                    &  q\vee p                          &  Commutative Laws      \\
+ p\wedge q                  &  q \wedge p                       &                        \\
 \hline
- (p\vee q)\vee r       &  p\vee (q\vee r)               &  Associative Laws      \\
- (p\wedge q) \wedge r  &  p \wedge (q \wedge r)         &                        \\
+ (p\vee q)\vee r            &  p\vee (q\vee r)                  &  Associative Laws      \\
+ (p\wedge q) \wedge r       &  p \wedge (q \wedge r)            &                        \\
 \hline
- p\vee (q\wedge r)     &  (p\vee q) \wedge (p\vee r)    &  Distributive Laws     \\
- p \wedge (q\vee r)    &  (p\wedge q)\vee (p \wedge r)  &                        \\
+ p\vee (q\wedge r)          &  (p\vee q) \wedge (p\vee r)       &  Distributive Laws     \\
+ p \wedge (q\vee r)         &  (p\wedge q)\vee (p \wedge r)     &                        \\
 \hline
- -(p\wedge q)          &  -p\vee -q                     &  De Morgans Laws       \\
- -(p v q)              &  -p\wedge -q                   &                        \\
+ \textlnot{}(p\wedge q)     &  \textlnot{}p\vee \textlnot{}q    &  De Morgans Laws       \\
+ \textlnot{}(p v q)         &  \textlnot{}p\wedge \textlnot{}q  &                        \\
 \hline
- p\vee (p\wedge q)     &  p                             &  Absorption Laws       \\
- p \wedge (p\vee q)    &  p                             &                        \\
+ p\vee (p\wedge q)          &  p                                &  Absorption Laws       \\
+ p \wedge (p\vee q)         &  p                                &                        \\
 \hline
- p v -p                &  T                             &  Negation Laws         \\
- p\wedge -p            &  F                             &                        \\
+ p v \textlnot{}p           &  T                                &  Negation Laws         \\
+ p\wedge \textlnot{}p       &  F                                &                        \\
 \hline
 \end{tabular}
 \end{center}
@@ -115,23 +115,23 @@
 \begin{center}
 \begin{tabular}{ll}
 \hline
- p \rightarrow q                            &  -p\vee q                    \\
+ p \rightarrow q                            &  \textlnot{}p\vee q                       \\
 \hline
- p \rightarrow q                            &  -q \rightarrow -p           \\
+ p \rightarrow q                            &  \textlnot{}q \rightarrow \textlnot{}p    \\
 \hline
- p\vee q                                    &  -p \rightarrow q            \\
+ p\vee q                                    &  \textlnot{}p \rightarrow q               \\
 \hline
- p\wedge  q                                 &  -(p \rightarrow -q)         \\
+ p\wedge  q                                 &  \textlnot{}(p \rightarrow \textlnot{}q)  \\
 \hline
- -(p \rightarrow q)                         &  p\wedge q                   \\
+ \textlnot{}(p \rightarrow q)               &  p\wedge q                                \\
 \hline
- (p \rightarrow q)\wedge (p \rightarrow r)  &  p \rightarrow (q \wedge r)  \\
+ (p \rightarrow q)\wedge (p \rightarrow r)  &  p \rightarrow (q \wedge r)               \\
 \hline
- (p \rightarrow r)\wedge (q \rightarrow r)  &  (p\vee q) \rightarrow r     \\
+ (p \rightarrow r)\wedge (q \rightarrow r)  &  (p\vee q) \rightarrow r                  \\
 \hline
- (p \rightarrow q)\vee (p \rightarrow r)    &  p \rightarrow (q\vee r)     \\
+ (p \rightarrow q)\vee (p \rightarrow r)    &  p \rightarrow (q\vee r)                  \\
 \hline
- (p \rightarrow r)\vee (q \rightarrow r)    &  (p\wedge q) \rightarrow r   \\
+ (p \rightarrow r)\vee (q \rightarrow r)    &  (p\wedge q) \rightarrow r                \\
 \hline
 \end{tabular}
 \end{center}
@@ -142,13 +142,13 @@
 \begin{center}
 \begin{tabular}{ll}
 \hline
- p \leftrightarrow q     &  (p \rightarrow q)\wedge (q \rightarrow p)  \\
+ p \leftrightarrow q               &  (p \rightarrow q)\wedge (q \rightarrow p)           \\
 \hline
- p \leftrightarrow q     &  -p \leftrightarrow -q                      \\
+ p \leftrightarrow q               &  \textlnot{}p \leftrightarrow \textlnot{}q           \\
 \hline
- p \leftrightarrow q     &  (p\wedge q)\vee (-p \wedge -q)             \\
+ p \leftrightarrow q               &  (p\wedge q)\vee (\textlnot{}p \wedge \textlnot{}q)  \\
 \hline
- -(p \leftrightarrow q)  &  p \leftrightarrow -q                       \\
+ \textlnot{}(p \leftrightarrow q)  &  p \leftrightarrow \textlnot{}q                      \\
 \hline
 \end{tabular}
 \end{center}
@@ -162,11 +162,14 @@
 \label{sec-1-4-1-1}%
 \begin{itemize}
 
-\item ∀(x) DX
+\item $\forall$(x) P(x)
 \label{sec-1-4-1-1-1}%
 
-\item \guillemotleft{}
+\item $\exists$
 \label{sec-1-4-1-1-2}%
+
+\item $\emptyset$
+\label{sec-1-4-1-1-3}%
 \end{itemize} % ends low level
 \end{itemize} % ends low level
 \subsection{Nested Quantifers}
@@ -191,5 +194,9 @@
 \label{sec-2-5}
 \subsection{Matrices}
 \label{sec-2-6}
+
+
+
+¬
 
 \end{document}
