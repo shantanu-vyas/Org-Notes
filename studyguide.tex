@@ -1,4 +1,4 @@
-% Created 2016-10-17 Mon 21:02
+% Created 2016-10-18 Tue 16:57
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -551,20 +551,314 @@
 \label{sec-2-1-7-1-1}%
 \end{itemize} % ends low level
 \end{itemize} % ends low level
+\subsubsection{Power Sets}
+\label{sec-2-1-8}
+\begin{itemize}
+
+\item Definition: Given the set S the power set of S i the set of all subsets of the set S. The powerset of S is denoted by P(S)
+\label{sec-2-1-8-1}%
+\begin{itemize}
+
+\item Example: What is the powerset of \{0,1,2\}
+\label{sec-2-1-8-1-1}%
+
+\item P(S) = \{$\emptyset$, \{0\}, \{1\}, \{2\}, \{0,1\}, \{0,2\}, \{1,2\},\{0,1,2\},\}
+\label{sec-2-1-8-1-2}%
+\end{itemize} % ends low level
+\end{itemize} % ends low level
+\subsubsection{Cartesian Product}
+\label{sec-2-1-9}
+\begin{itemize}
+
+\item Definition: The ordered n-tuple (a1,a2..an) is the ordered collection that has a1 as its first element, a2 as its second..and an as its nth element.
+\label{sec-2-1-9-1}%
+
+\item A x B = \{(a,b) | a $\in$ A $\wedge$ b $\in$ B\}
+\label{sec-2-1-9-2}%
+
+\item Example: What is the cartesian Product of A = \{1,2\} B = \{a,b,c\}
+\label{sec-2-1-9-3}%
+\begin{itemize}
+
+\item A x B = \{(1, a), (1, b), (1, c), (2, a), (2, b), (2, c)\}
+\label{sec-2-1-9-3-1}%
+
+\item B x A = \{(a, 1), (a, 2), (b, 1), (b, 2), (c, 1), (c, 2)\}
+\label{sec-2-1-9-3-2}%
+\end{itemize} % ends low level
+
+\item Example: What is the cartesian Product of A = \{0,1\} B = \{1,2\} C = \{0,1,2\}
+\label{sec-2-1-9-4}%
+\begin{itemize}
+
+\item A × B × C = \{(0, 1, 0), (0, 1, 1), (0, 1, 2), (0, 2, 0), (0, 2, 1), (0, 2, 2),(1, 1, 0), (1, 1, 1), (1, 1, 2), (1, 2, 0), (1, 2, 1), (1, 2, 2)\}.
+\label{sec-2-1-9-4-1}%
+\end{itemize} % ends low level
+\end{itemize} % ends low level
+\subsubsection{Truth Set}
+\label{sec-2-1-10}
+\begin{itemize}
+
+\item The truth set for a predicate P, and domain D the truth set of P is \{x $\in$ D | P(x)\}
+\label{sec-2-1-10-1}%
+
+\item Another way to phrase this is the Truth set is the set that makes a predicate true in the domain.
+\label{sec-2-1-10-2}%
+\end{itemize} % ends low level
 \subsection{Set Operations}
 \label{sec-2-2}
+\subsubsection{Union}
+\label{sec-2-2-1}
+\begin{itemize}
+
+\item If A and B are sets the union of the sets A and B, denoted by A $\cup$ B is the set that contains elements in either or both A and B
+\label{sec-2-2-1-1}%
+
+\item A $\cup$ B = \{x | x $\in$ A $\vee$ x $\in$ B\}
+\label{sec-2-2-1-2}%
+\end{itemize} % ends low level
+\subsubsection{Intersection}
+\label{sec-2-2-2}
+\begin{itemize}
+
+\item If A and B are sets, the intersection of the sets A and B, denoted by A $\cap$ B, is the set containing elements in both A and B
+\label{sec-2-2-2-1}%
+
+\item A $\cap$ B = \{x | x $\in$ A $\wedge$ x $\in$ B\}.
+\label{sec-2-2-2-2}%
+\end{itemize} % ends low level
+\subsubsection{Disjoint}
+\label{sec-2-2-3}
+\begin{itemize}
+
+\item Two sets are considered disjoint if they have no intersection or their intersection set is empty
+\label{sec-2-2-3-1}%
+\end{itemize} % ends low level
+\subsubsection{Difference}
+\label{sec-2-2-4}
+\begin{itemize}
+
+\item If A and B are sets, the difference of A and B denoted by A - B is the set elements in A that are not in B
+\label{sec-2-2-4-1}%
+
+\item A - B = \{x | x $\in$ A $\wedge$ x $\notin$ B \}
+\label{sec-2-2-4-2}%
+\end{itemize} % ends low level
+\subsubsection{Complement}
+\label{sec-2-2-5}
+\begin{itemize}
+
+\item If U is the universal set, the complement of the set A denoted by A(bar) is the set of U - A or all the elements in the universe not in A
+\label{sec-2-2-5-1}%
+
+\item A(bar) = \{x $\in$ U | x $\notin$ A\}
+\label{sec-2-2-5-2}%
+\end{itemize} % ends low level
+\subsubsection{Set Identities}
+\label{sec-2-2-6}
+
+
+\begin{center}
+\begin{tabular}{lll}
+\hline
+ p\wedge U               &  A                                &  Identity Laws         \\
+ p\vee \emptyset         &  A                                &                        \\
+\hline
+ A\vee T                 &  U                                &  Domination Laws       \\
+ A\wedge F               &  \emptyset                        &                        \\
+\hline
+ A\vee A                 &  A                                &  Idempotent Laws       \\
+ A\wedge A               &  A                                &                        \\
+\hline
+ (A(bar)bar)             &  A                                &  Double Negation Laws  \\
+\hline
+ A\vee B                 &  B\vee A                          &  Commutative Laws      \\
+ A\wedge B               &  B \wedge A                       &                        \\
+\hline
+ (A\vee B)\vee C         &  p\vee (B\vee C)                  &  Associative Laws      \\
+ (A\wedge B) \wedge C    &  A\wedge (B \wedge C)             &                        \\
+\hline
+ p\vee (B\wedge C)       &  (p\vee B) \wedge (p\vee C)       &  Distributive Laws     \\
+ A\wedge (B\vee C)       &  (p\wedge B)\vee (A\wedge C)      &                        \\
+\hline
+ \textlnot{}(p\wedge B)  &  \textlnot{}p\vee \textlnot{}B    &  De Morgans Laws       \\
+ \textlnot{}(Av B)       &  \textlnot{}p\wedge \textlnot{}B  &                        \\
+\hline
+ A\vee (p\wedge B)       &  A                                &  Absorption Laws       \\
+ A\wedge (p\vee B)       &  A                                &                        \\
+\hline
+ A V A(bar)              &  U                                &  Complement Laws       \\
+ A \& A(bar)             &  Empty Set                        &                        \\
+\hline
+\end{tabular}
+\end{center}
 \subsection{Functions}
 \label{sec-2-3}
+\subsubsection{Functions}
+\label{sec-2-3-1}
+\begin{itemize}
+
+\item Let A and B be nonempty sets. A function f from A to B is an assignment of exactly one element of B to each element of A
+\label{sec-2-3-1-1}%
+
+\item This also means that every element of A gets mapped to at exactly one set of B
+\label{sec-2-3-1-2}%
+
+\item Everything in set A gets mapped to an element of set B
+\label{sec-2-3-1-3}%
+
+\item (f1+f2)(x) = f1(x) + f2(x)
+\label{sec-2-3-1-4}%
+\end{itemize} % ends low level
+\subsubsection{Image}
+\label{sec-2-3-2}
+\begin{itemize}
+
+\item If f is a function that maps A to B, elements of B are called the image and the elements of A are called the preimage.
+\label{sec-2-3-2-1}%
+\end{itemize} % ends low level
+\subsubsection{One to One (Injective)}
+\label{sec-2-3-3}
+\begin{itemize}
+
+\item If f is a function that maps A to B, each a $\in$ A maps to a unique b $\in$ B
+\label{sec-2-3-3-1}%
+\end{itemize} % ends low level
+\subsubsection{Onto}
+\label{sec-2-3-4}
+\begin{itemize}
+
+\item If f is a function that maps A to B, the function is onto if all elements of the codomain are mapped to from values of A
+\label{sec-2-3-4-1}%
+\end{itemize} % ends low level
+\subsubsection{One to one correspondence}
+\label{sec-2-3-5}
+\begin{itemize}
+
+\item If f is a function that maps A to b, it has one to one correspondance if it is both one to one and onto
+\label{sec-2-3-5-1}%
+\end{itemize} % ends low level
+\subsubsection{Inverse Functions}
+\label{sec-2-3-6}
+\begin{itemize}
+
+\item If a function f has a one to one correspondance it has an inverse function f-1 that maps the codomain to the domain.b
+\label{sec-2-3-6-1}%
+\end{itemize} % ends low level
+\subsubsection{Composition}
+\label{sec-2-3-7}
+\begin{itemize}
+
+\item (f o f-1)(x) = x
+\label{sec-2-3-7-1}%
+
+\item (f o g)(x) = f(g(x))
+\label{sec-2-3-7-2}%
+
+\item (f + g)(x) = f(x) + g(x)
+\label{sec-2-3-7-3}%
+
+\item (f * g)(x) = f(x) * g(x)
+\label{sec-2-3-7-4}%
+\end{itemize} % ends low level
 \subsection{Sequences and Summations}
 \label{sec-2-4}
+\subsubsection{Definition: Sequence is a function from a subset of the set of integers to a set S. They're also an ordered set.}
+\label{sec-2-4-1}
+\subsubsection{Example:}
+\label{sec-2-4-2}
+\begin{itemize}
+
+\item \{1,2,3,4,5,6,\ldots{},\}
+\label{sec-2-4-2-1}%
+\end{itemize} % ends low level
+\subsubsection{Geometric Sequence}
+\label{sec-2-4-3}
+\begin{itemize}
+
+\item a, ar, ar$^2$,\ldots{},ar$^n$
+\label{sec-2-4-3-1}%
+
+\item Where a is the inital term and r is a ration
+\label{sec-2-4-3-2}%
+\end{itemize} % ends low level
+\subsubsection{Arithmetic Progression}
+\label{sec-2-4-4}
+\begin{itemize}
+
+\item a, a+d, a+2d,\ldots{},a+nd
+\label{sec-2-4-4-1}%
+
+\item Where a is the initial term and d is the common difference
+\label{sec-2-4-4-2}%
+\end{itemize} % ends low level
+\subsubsection{Recurrence Relations}
+\label{sec-2-4-5}
+\begin{itemize}
+
+\item A reccurence relation for the sequence \{an\} is an equation that expresses an in terms of one or more of the previous terms.
+\label{sec-2-4-5-1}%
+
+\item Example:
+\label{sec-2-4-5-2}%
+\begin{itemize}
+
+\item a0 = 0;
+\label{sec-2-4-5-2-1}%
+
+\item a1 = a(n-1)+1
+\label{sec-2-4-5-2-2}%
+\end{itemize} % ends low level
+\end{itemize} % ends low level
+\subsubsection{We say that we have solved a recurrence relation together with the initial condition when we find a formula. We call this the closed formula.}
+\label{sec-2-4-6}
+\begin{itemize}
+
+\item Example:
+\label{sec-2-4-6-1}%
+\begin{itemize}
+
+\item DO THIS
+\label{sec-2-4-6-1-1}%
+\end{itemize} % ends low level
+\end{itemize} % ends low level
+\subsubsection{Summations}
+\label{sec-2-4-7}
+
+
+\begin{center}
+\begin{tabular}{ll}
+\hline
+ \sum (k = 0 \rightarrow n) ar^k                      &  ar^(n+1) -a/(r-1) r \neq 1  \\
+\hline
+ \sum (k = 1 \rightarrow n) k                         &  n(n+1)/2                    \\
+\hline
+ \sum (k = 1 \rightarrow n) k^2                       &  n(n+1)(2n+1)/6              \\
+\hline
+ \sum (k = 1 \rightarrow n) k^3                       &  n^2(n+1)^2/4                \\
+\hline
+ \sum (k = 0 \rightarrow \inf) x^k abs(x) \le 1       &  1/(1-x)                     \\
+\hline
+ \sum (k = 0 \rightarrow \inf) kx^(k-1) abs(x) \le 1  &  1/(1-x)^2                   \\
+\hline
+\end{tabular}
+\end{center}
 \subsection{Cardinality of Sets}
 \label{sec-2-5}
-\subsection{Matrices}
-\label{sec-2-6}
+\subsubsection{Definition: The sets A and B have the same cardinality iff there is a one to one correspondance from A to B, we write |A| = |B|}
+\label{sec-2-5-1}
+\subsubsection{Countability}
+\label{sec-2-5-2}
+\begin{itemize}
+
+\item A set that is either finite or has the same cardinality as the set of positive integers is called countable..
+\label{sec-2-5-2-1}%
+
+\item If A and B are both countable sets then A $\cup$ B is also countable.
+\label{sec-2-5-2-2}%
 
 
 
-
-$\emptyset$
+\end{itemize} % ends low level
 
 \end{document}
