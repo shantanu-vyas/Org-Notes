@@ -227,6 +227,26 @@
 **** R = Set of Real Numbers
 **** R+ = Set of positive Real Numbers
 **** C = Set of complex numbers
+*** Interval Notation
+|-------+-----------------------------|
+| [a,b] | {a \le x \le b}             |
+|-------+-----------------------------|
+| [a,b) | {a \le x} \lessthan b }     |
+|-------+-----------------------------|
+| (a,b] | {a \lessthan x \le b }      |
+|-------+-----------------------------|
+| (a,b) | {a \lessthan x \lessthan b} |
+|-------+-----------------------------|
+*** Empty Set
+**** Denoted by \emptyset
+**** All sets contain the empty set although it does not count as a element when measuring cardinality 
+*** Subsets
+**** The set A is a subset of B iff every element of A is also in B. Denoted by A \subseteq B
+*** Proper Subset
+**** The set A is a subset of B iff every element of A is also in B but A \neq B. Denoted by A \subset B
+*** Set Cardinality
+**** If S is a set the cardinality of the set denoted by |S| is the number of UNIQUE elements.
+***** Example S = {1,2,3,3,4,4,5} |S| = 5
 ** Set Operations
 ** Functions
 ** Sequences and Summations

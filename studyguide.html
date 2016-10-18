@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>studyguide</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="title" content="studyguide"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2016-10-17T21:02-0400"/>
+<meta name="author" content="Shantanu Vyas"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">studyguide</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Chapter 1</a>
+<ul>
+<li><a href="#sec-1-1">1.1 Propositional Logic</a>
+<ul>
+<li><a href="#sec-1-1-1">1.1.1 Converse Contrapositive and Inverse (p -&gt; q)</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-2">1.2 Applications of Propositional Logic</a>
+<ul>
+<li><a href="#sec-1-2-1">1.2.1 Examples of turning sentences into propositional Logic.</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-3">1.3 Propositional Equivalences</a>
+<ul>
+<li><a href="#sec-1-3-1">1.3.1 Logical Equivalences</a></li>
+<li><a href="#sec-1-3-2">1.3.2 Logical Equivelances Involving Conditional Statements</a></li>
+<li><a href="#sec-1-3-3">1.3.3 Logical Equivalences Involving Biconditional Statements</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-4">1.4 Predicates and Quantifiers</a>
+<ul>
+<li><a href="#sec-1-4-1">1.4.1 Quantifiers</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-5">1.5 Nested Quantifers</a>
+<ul>
+<li><a href="#sec-1-5-1">1.5.1 Nested Quantifiers can be used when there are multiple variables such as x and y</a></li>
+<li><a href="#sec-1-5-2">1.5.2 Quantification of Two Variables</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-6">1.6 Rules of Inference</a>
+<ul>
+<li><a href="#sec-1-6-1">1.6.1 Rules of inference</a></li>
+<li><a href="#sec-1-6-2">1.6.2 Rules of Inference for Quantifies Statements</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-7">1.7 Introduction to Proofs</a>
+<ul>
+<li><a href="#sec-1-7-1">1.7.1 There are 3 main methods for proofs.</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-8">1.8 Proof methods and Strategy</a>
+<ul>
+<li><a href="#sec-1-8-1">1.8.1 Exhaustive Proof</a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 Chapter 2</a>
+<ul>
+<li><a href="#sec-2-1">2.1 Sets</a>
+<ul>
+<li><a href="#sec-2-1-1">2.1.1 Definition</a></li>
+<li><a href="#sec-2-1-2">2.1.2 Number sets</a></li>
+<li><a href="#sec-2-1-3">2.1.3 Interval Notation</a></li>
+<li><a href="#sec-2-1-4">2.1.4 Empty Set</a></li>
+<li><a href="#sec-2-1-5">2.1.5 Subsets</a></li>
+<li><a href="#sec-2-1-6">2.1.6 Proper Subset</a></li>
+<li><a href="#sec-2-1-7">2.1.7 Set Cardinality</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-2">2.2 Set Operations</a></li>
+<li><a href="#sec-2-3">2.3 Functions</a></li>
+<li><a href="#sec-2-4">2.4 Sequences and Summations</a></li>
+<li><a href="#sec-2-5">2.5 Cardinality of Sets</a></li>
+<li><a href="#sec-2-6">2.6 Matrices</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Chapter 1</h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Propositional Logic</h3>
+<div class="outline-text-3" id="text-1-1">
+
+
+</div>
+
+<div id="outline-container-1-1-1" class="outline-4">
+<h4 id="sec-1-1-1"><span class="section-number-4">1.1.1</span> Converse Contrapositive and Inverse (p -&gt; q)</h4>
+<div class="outline-text-4" id="text-1-1-1">
+
+<ul>
+<li id="sec-1-1-1-1">Coverse<br/>
+<ul>
+<li id="sec-1-1-1-1-1">q &rarr;  p<br/>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li id="sec-1-1-1-2">Contrapositive<br/>
+<ul>
+<li id="sec-1-1-1-2-1">q &rarr; \textlnot{}p<br/>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li id="sec-1-1-1-3">Inverse<br/>
+<ul>
+<li id="sec-1-1-1-3-1">\textlnot{}p &rarr; \textlnot{}q<br/>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Applications of Propositional Logic</h3>
+<div class="outline-text-3" id="text-1-2">
+
+
+</div>
+
+<div id="outline-container-1-2-1" class="outline-4">
+<h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> Examples of turning sentences into propositional Logic.</h4>
+<div class="outline-text-4" id="text-1-2-1">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Propositional Equivalences</h3>
+<div class="outline-text-3" id="text-1-3">
+
+
+</div>
+
+<div id="outline-container-1-3-1" class="outline-4">
+<h4 id="sec-1-3-1"><span class="section-number-4">1.3.1</span> Logical Equivalences</h4>
+<div class="outline-text-4" id="text-1-3-1">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="left" /><col class="left" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">p&and; T</th><th scope="col" class="left">p</th><th scope="col" class="left">Identity Laws</th></tr>
+<tr><th scope="col" class="left">p&or; F</th><th scope="col" class="left">p</th><th scope="col" class="left"></th></tr>
+</thead>
+<tbody>
+<tr><td class="left">p&or; T</td><td class="left">T</td><td class="left">Domination Laws</td></tr>
+<tr><td class="left">p&and; F</td><td class="left">F</td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">p&or; p</td><td class="left">p</td><td class="left">Idempotent Laws</td></tr>
+<tr><td class="left">p&and; p</td><td class="left">p</td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">\textlnot{}(\textlnot{}p)</td><td class="left">p</td><td class="left">Double Negation Laws</td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">p&or; q</td><td class="left">q&or; p</td><td class="left">Commutative Laws</td></tr>
+<tr><td class="left">p&and; q</td><td class="left">q &and; p</td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">(p&or; q)&or; r</td><td class="left">p&or; (q&or; r)</td><td class="left">Associative Laws</td></tr>
+<tr><td class="left">(p&and; q) &and; r</td><td class="left">p &and; (q &and; r)</td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">p&or; (q&and; r)</td><td class="left">(p&or; q) &and; (p&or; r)</td><td class="left">Distributive Laws</td></tr>
+<tr><td class="left">p &and; (q&or; r)</td><td class="left">(p&and; q)&or; (p &and; r)</td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">\textlnot{}(p&and; q)</td><td class="left">\textlnot{}p&or; \textlnot{}q</td><td class="left">De Morgans Laws</td></tr>
+<tr><td class="left">\textlnot{}(p v q)</td><td class="left">\textlnot{}p&and; \textlnot{}q</td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">p&or; (p&and; q)</td><td class="left">p</td><td class="left">Absorption Laws</td></tr>
+<tr><td class="left">p &and; (p&or; q)</td><td class="left">p</td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">p v \textlnot{}p</td><td class="left">T</td><td class="left">Negation Laws</td></tr>
+<tr><td class="left">p&and; \textlnot{}p</td><td class="left">F</td><td class="left"></td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-3-2" class="outline-4">
+<h4 id="sec-1-3-2"><span class="section-number-4">1.3.2</span> Logical Equivelances Involving Conditional Statements</h4>
+<div class="outline-text-4" id="text-1-3-2">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="left" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">p &rarr; q</th><th scope="col" class="left">\textlnot{}p&or; q</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">p &rarr; q</td><td class="left">\textlnot{}q &rarr; \textlnot{}p</td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">p&or; q</td><td class="left">\textlnot{}p &rarr; q</td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">p&and;  q</td><td class="left">\textlnot{}(p &rarr; \textlnot{}q)</td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">\textlnot{}(p &rarr; q)</td><td class="left">p&and; q</td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">(p &rarr; q)&and; (p &rarr; r)</td><td class="left">p &rarr; (q &and; r)</td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">(p &rarr; r)&and; (q &rarr; r)</td><td class="left">(p&or; q) &rarr; r</td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">(p &rarr; q)&or; (p &rarr; r)</td><td class="left">p &rarr; (q&or; r)</td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">(p &rarr; r)&or; (q &rarr; r)</td><td class="left">(p&and; q) &rarr; r</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-3-3" class="outline-4">
+<h4 id="sec-1-3-3"><span class="section-number-4">1.3.3</span> Logical Equivalences Involving Biconditional Statements</h4>
+<div class="outline-text-4" id="text-1-3-3">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="left" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">p &harr; q</th><th scope="col" class="left">(p &rarr; q)&and; (q &rarr; p)</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">p &harr; q</td><td class="left">\textlnot{}p &harr; \textlnot{}q</td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">p &harr; q</td><td class="left">(p&and; q)&or; (\textlnot{}p &and; \textlnot{}q)</td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">\textlnot{}(p &harr; q)</td><td class="left">p &harr; \textlnot{}q</td></tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Predicates and Quantifiers</h3>
+<div class="outline-text-3" id="text-1-4">
+
+
+</div>
+
+<div id="outline-container-1-4-1" class="outline-4">
+<h4 id="sec-1-4-1"><span class="section-number-4">1.4.1</span> Quantifiers</h4>
+<div class="outline-text-4" id="text-1-4-1">
+
+<ul>
+<li id="sec-1-4-1-1">Universal Quantifer<br/>
+<ul>
+<li id="sec-1-4-1-1-1">&forall;(x) P(x)<br/>
+<ul>
+<li id="sec-1-4-1-1-1-1">Definition: For all x in the universe P(x) is true;<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-4-1-1-1-2">Negation<br/>
+<ul>
+<li id="sec-1-4-1-1-1-2-1">\textlnot{}&forall;(x) P(x) can also be written as &exist;\textlnot{} P(x)<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-4-1-1-1-2-2">There exists an x such that P(x) is false<br/>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li id="sec-1-4-1-2">Existential Quantifer<br/>
+<ul>
+<li id="sec-1-4-1-2-1">&exist;(x) P(x)<br/>
+<ul>
+<li id="sec-1-4-1-2-1-1">Definition: For all x in the universe P(x) is true for at least one x;<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-4-1-2-1-2">Negation<br/>
+<ul>
+<li id="sec-1-4-1-2-1-2-1">\textlnot{}&exist;(x) P(x) can also be written as &forall;\textlnot{} P(x)<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-4-1-2-1-2-2">All x in the universe make P(x) false<br/>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> Nested Quantifers</h3>
+<div class="outline-text-3" id="text-1-5">
+
+
+</div>
+
+<div id="outline-container-1-5-1" class="outline-4">
+<h4 id="sec-1-5-1"><span class="section-number-4">1.5.1</span> Nested Quantifiers can be used when there are multiple variables such as x and y</h4>
+<div class="outline-text-4" id="text-1-5-1">
+
+<ul>
+<li id="sec-1-5-1-1">&forall; (x) &exist; (y) (x + y = 0)<br/>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1-5-2" class="outline-4">
+<h4 id="sec-1-5-2"><span class="section-number-4">1.5.2</span> Quantification of Two Variables</h4>
+<div class="outline-text-4" id="text-1-5-2">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="left" /><col class="left" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">Statement</th><th scope="col" class="left">When True</th><th scope="col" class="left">When False</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">&forall; (x) &forall; (y) P(x,y)</td><td class="left">P(x,y) is true for every pair</td><td class="left">When there is a x,y</td></tr>
+<tr><td class="left"></td><td class="left"></td><td class="left">for which P(x,y) is false</td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">&forall; (x) &exist; (y) P(x,y)</td><td class="left">For every x there is a y</td><td class="left">When there is an x such</td></tr>
+<tr><td class="left"></td><td class="left">for which P(x,y) is true</td><td class="left">that P(x,y) is false for every y</td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">&exist; (x) &forall; (y) P(x,y)</td><td class="left">There is an x for which P(x,y)</td><td class="left">When for every x there is a y</td></tr>
+<tr><td class="left"></td><td class="left">is true for every y</td><td class="left">for which P(x,y) is false</td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">&exist; (x) &exist; (y) P(x,y)</td><td class="left">There is a pair for x,y</td><td class="left">P(x,y) is false for</td></tr>
+<tr><td class="left">&exist; (y) &exist; (x) P(x,y)</td><td class="left">for which P(x,y) is true</td><td class="left">every pair of x and y</td></tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1-6" class="outline-3">
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> Rules of Inference</h3>
+<div class="outline-text-3" id="text-1-6">
+
+
+</div>
+
+<div id="outline-container-1-6-1" class="outline-4">
+<h4 id="sec-1-6-1"><span class="section-number-4">1.6.1</span> Rules of inference</h4>
+<div class="outline-text-4" id="text-1-6-1">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="left" /><col class="left" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">Rule of Inference</th><th scope="col" class="left">Tautology</th><th scope="col" class="left">Name</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">p</td><td class="left">(p&and; (p &rarr; q)) &rarr; q</td><td class="left">Modus Ponens</td></tr>
+<tr><td class="left">p &rarr; q</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">---------------</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">q</td><td class="left"></td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">\textlnot q</td><td class="left">(\textlnot q &and; (p &rarr; q)) &rarr; \textlnot p</td><td class="left">Modus Tollens</td></tr>
+<tr><td class="left">p &rarr; q</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">---------------</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">\textlnot p</td><td class="left"></td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">p &rarr; q</td><td class="left">((p &or; q) &and; \textlnot p) &rarr; q</td><td class="left">Hypothetical</td></tr>
+<tr><td class="left">q &rarr; r</td><td class="left"></td><td class="left">Syllogism</td></tr>
+<tr><td class="left">---------------</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">p  &rarr; r</td><td class="left"></td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">p&or; q</td><td class="left">p &rarr; (p &or; q)</td><td class="left">Disjunctive</td></tr>
+<tr><td class="left">\textlnot p</td><td class="left"></td><td class="left">Syllogism</td></tr>
+<tr><td class="left">---------------</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">q</td><td class="left"></td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">p</td><td class="left">p &rarr; (p&or; q)</td><td class="left">Addition</td></tr>
+<tr><td class="left">---------------</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">p&or; q</td><td class="left"></td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">p&and; q</td><td class="left">(p&and; q) &rarr; p</td><td class="left">Simplification</td></tr>
+<tr><td class="left">---------------</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">p</td><td class="left"></td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">p</td><td class="left">((p)&and;(q)) &rarr; (p &and; q)</td><td class="left">Conjunction</td></tr>
+<tr><td class="left">q</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">---------------</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">p&and; q</td><td class="left"></td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">p&or; q</td><td class="left">((p&or; q)&and; (\textlnot p&or; r))&rarr; (q&or; r)</td><td class="left">Conjucntion</td></tr>
+<tr><td class="left">\textlnot p&or; r</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">---------------</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">q&or; r</td><td class="left"></td><td class="left"></td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-6-2" class="outline-4">
+<h4 id="sec-1-6-2"><span class="section-number-4">1.6.2</span> Rules of Inference for Quantifies Statements</h4>
+<div class="outline-text-4" id="text-1-6-2">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="left" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">Rules of Inference</th><th scope="col" class="left">Name</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">&forall; (x) P(x)</td><td class="left">Universal Instantiation</td></tr>
+<tr><td class="left">----------------</td><td class="left"></td></tr>
+<tr><td class="left">P(c)</td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">P(x) for an Arbitrary c</td><td class="left">Universal Generalization</td></tr>
+<tr><td class="left">----------------</td><td class="left"></td></tr>
+<tr><td class="left">&forall;(x) P(x)</td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">&exist; (x) P(x)</td><td class="left">Existential Instantiation</td></tr>
+<tr><td class="left">----------------</td><td class="left"></td></tr>
+<tr><td class="left">P(c) for some element c</td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">P(x) for some element c</td><td class="left">Existential Generalization</td></tr>
+<tr><td class="left">----------------</td><td class="left"></td></tr>
+<tr><td class="left">&exist; P(x)</td><td class="left"></td></tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1-7" class="outline-3">
+<h3 id="sec-1-7"><span class="section-number-3">1.7</span> Introduction to Proofs</h3>
+<div class="outline-text-3" id="text-1-7">
+
+
+</div>
+
+<div id="outline-container-1-7-1" class="outline-4">
+<h4 id="sec-1-7-1"><span class="section-number-4">1.7.1</span> There are 3 main methods for proofs.</h4>
+<div class="outline-text-4" id="text-1-7-1">
+
+<ul>
+<li id="sec-1-7-1-1">Direct Proof<br/>
+<ul>
+<li id="sec-1-7-1-1-1">Construct a conditional statement p &rarr; q<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-7-1-1-2">Assume p to be true<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-7-1-1-3">Use rules of inference to then show that when p is true q must be true (p true and q false can not happen)<br/>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li id="sec-1-7-1-2">Proof by Contraposition<br/>
+<ul>
+<li id="sec-1-7-1-2-1">Construct a conditional statement p &rarr; q<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-7-1-2-2">Set up the contrapositive to be \textlnot q &rarr; \textlnot p<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-7-1-2-3">Prove that if \textlnot q is true then \textlnot p has to be true<br/>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li id="sec-1-7-1-3">Proof by Contradiction<br/>
+<ul>
+<li id="sec-1-7-1-3-1">If we want to prove p is true set up the contradiction to be \textlnot p &rarr; q<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-7-1-3-2">Because q is false but \textlnot p &rarr; q is true we know \textlnotp is false which means p is true<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-7-1-3-3">You are assuming your premise to be false then attempting to show that the conditional statement is then false<br/>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1-8" class="outline-3">
+<h3 id="sec-1-8"><span class="section-number-3">1.8</span> Proof methods and Strategy</h3>
+<div class="outline-text-3" id="text-1-8">
+
+
+</div>
+
+<div id="outline-container-1-8-1" class="outline-4">
+<h4 id="sec-1-8-1"><span class="section-number-4">1.8.1</span> Exhaustive Proof</h4>
+<div class="outline-text-4" id="text-1-8-1">
+
+<ul>
+<li id="sec-1-8-1-1">Sometimes w cannot prove a theorem using a single argument that holds for all possible cases.<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-8-1-2">Proofs by exhaustion use proof by cases for every element and check examples.<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-8-1-3">Example<br/>
+<ul>
+<li id="sec-1-8-1-3-1">Prove that (n+1)<sup>3</sup> &ge; 3<sup>n</sup> if n is a positive integer &le; 4<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-8-1-3-2">To do this test for n = {1,2,3,4}<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-8-1-3-3">Since for n = {1,2,3,4} 3<sup>n</sup> is greater we proved this statement through Proof by Exhaustion<br/>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li id="sec-1-8-1-4">Proof by Cases<br/>
+<ul>
+<li id="sec-1-8-1-4-1">A proof by cases must cover all possible cases that arise in a theorem.<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-8-1-4-2">Example<br/>
+<ul>
+<li id="sec-1-8-1-4-2-1">Prove that if n is an integer than n<sup>2</sup> &ge; n<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-8-1-4-2-2">We check 3 cases<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-8-1-4-2-3">1) n = 0; 0<sup>2</sup> = 0 which follows n<sup>2</sup> &ge; n<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-8-1-4-2-4">2) n &ge; 1; Multiply both sides of the inequality n &ge; 1 by the positive integer n. We get n<sup>2</sup> &gt; n*1 for n &ge; 1<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-8-1-4-2-5">3) n &le; 1; Since n<sup>2</sup> &ge; 0 it follows n<sup>2</sup> &ge; n<br/>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li id="sec-1-8-1-5">Leveraging Proof by Cases<br/>
+<ul>
+<li><br/>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li id="sec-1-8-1-6">Existence Proofs<br/>
+<ul>
+<li><br/>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li id="sec-1-8-1-7">Proof Stratagies<br/>
+<ul>
+<li id="sec-1-8-1-7-1">Forward and Backward Reasoning<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-8-1-7-2">Adapting Existing Proofs<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-1-8-1-7-3">Looking for Counterexamples<br/>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Chapter 2</h2>
+<div class="outline-text-2" id="text-2">
+
+
+</div>
+
+<div id="outline-container-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Sets</h3>
+<div class="outline-text-3" id="text-2-1">
+
+
+</div>
+
+<div id="outline-container-2-1-1" class="outline-4">
+<h4 id="sec-2-1-1"><span class="section-number-4">2.1.1</span> Definition</h4>
+<div class="outline-text-4" id="text-2-1-1">
+
+<ul>
+<li id="sec-2-1-1-1">A set is an unordered collection of objects. a &isin; A<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-1-1-2">Set builder notation<br/>
+<ul>
+<li id="sec-2-1-1-2-1">Set builder notation is used to describe a set.<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-1-1-2-2">O = {x | x is a positive integer less than 10}<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-1-1-2-3">O = {x | x &lt; 10 &and; 2x+1 &isin; Z+ }<br/>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-2-1-2" class="outline-4">
+<h4 id="sec-2-1-2"><span class="section-number-4">2.1.2</span> Number sets</h4>
+<div class="outline-text-4" id="text-2-1-2">
+
+<ul>
+<li id="sec-2-1-2-1">N = {0,1,2,..,} - Set of Natural Numbers<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-1-2-2">Z = {&hellip;, -1,0,1,&hellip;,} - Set of Intgers<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-1-2-3">Z+ = {1,2,3,&hellip;,} - Set of Positive Integers<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-1-2-4">Q = {p/q | p &isin; Z, q /in Z, and q &ne; 0} - Set of Rational Numbers<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-1-2-5">R = Set of Real Numbers<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-1-2-6">R+ = Set of positive Real Numbers<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-1-2-7">C = Set of complex numbers<br/>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-2-1-3" class="outline-4">
+<h4 id="sec-2-1-3"><span class="section-number-4">2.1.3</span> Interval Notation</h4>
+<div class="outline-text-4" id="text-2-1-3">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="left" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">[a,b]</th><th scope="col" class="left">{a &le; x &le; b}</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">[a,b)</td><td class="left">{a &le; x} \lessthan b }</td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">(a,b]</td><td class="left">{a \lessthan x &le; b }</td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">(a,b)</td><td class="left">{a \lessthan x \lessthan b}</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-1-4" class="outline-4">
+<h4 id="sec-2-1-4"><span class="section-number-4">2.1.4</span> Empty Set</h4>
+<div class="outline-text-4" id="text-2-1-4">
+
+<ul>
+<li id="sec-2-1-4-1">Denoted by &empty;<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-2-1-4-2">All sets contain the empty set although it does not count as a element when measuring cardinality<br/>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-2-1-5" class="outline-4">
+<h4 id="sec-2-1-5"><span class="section-number-4">2.1.5</span> Subsets</h4>
+<div class="outline-text-4" id="text-2-1-5">
+
+<ul>
+<li id="sec-2-1-5-1">The set A is a subset of B iff every element of A is also in B. Denoted by A \subseteq B<br/>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-2-1-6" class="outline-4">
+<h4 id="sec-2-1-6"><span class="section-number-4">2.1.6</span> Proper Subset</h4>
+<div class="outline-text-4" id="text-2-1-6">
+
+<ul>
+<li id="sec-2-1-6-1">The set A is a subset of B iff every element of A is also in B but A &ne; B. Denoted by A &sub; B<br/>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-2-1-7" class="outline-4">
+<h4 id="sec-2-1-7"><span class="section-number-4">2.1.7</span> Set Cardinality</h4>
+<div class="outline-text-4" id="text-2-1-7">
+
+<ul>
+<li id="sec-2-1-7-1">If S is a set the cardinality of the set denoted by |S| is the number of UNIQUE elements.<br/>
+<ul>
+<li id="sec-2-1-7-1-1">Example S = {1,2,3,3,4,4,5} |S| = 5<br/>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Set Operations</h3>
+<div class="outline-text-3" id="text-2-2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Functions</h3>
+<div class="outline-text-3" id="text-2-3">
+
+</div>
+
+</div>
+
+<div id="outline-container-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> Sequences and Summations</h3>
+<div class="outline-text-3" id="text-2-4">
+
+</div>
+
+</div>
+
+<div id="outline-container-2-5" class="outline-3">
+<h3 id="sec-2-5"><span class="section-number-3">2.5</span> Cardinality of Sets</h3>
+<div class="outline-text-3" id="text-2-5">
+
+</div>
+
+</div>
+
+<div id="outline-container-2-6" class="outline-3">
+<h3 id="sec-2-6"><span class="section-number-3">2.6</span> Matrices</h3>
+<div class="outline-text-3" id="text-2-6">
+
+
+
+
+<p>
+&empty;
+</p></div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2016-10-17T21:02-0400</p>
+<p class="author">Author: Shantanu Vyas</p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>
